@@ -6,7 +6,7 @@
 SELECT DISTINCT(id) 
 FROM dailyactivity
 ```
-Number of Users = 35
+Number of users = 33
 
 **- Checked for duplicate entries:**
 

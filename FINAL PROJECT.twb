@@ -1,0 +1,1856 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0415.1018                               -->
+<workbook original-version='18.1' source-build='2025.1.1 (20251.25.0415.1018)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='dailyActivity_merged (1)' inline='true' name='federated.068fvat1aca66r10bktc50efak7r' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='dailyActivity_merged (1)' name='textscan.1et5ot201sl3261feo90z0nxkp50'>
+            <connection class='textscan' directory='C:/Users/muham/Downloads' filename='dailyActivity_merged (1).csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1et5ot201sl3261feo90z0nxkp50' name='dailyActivity_merged (1).csv' table='[dailyActivity_merged (1)#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='integer' name='Id' ordinal='0' />
+            <column datatype='date' name='ActivityDate' ordinal='1' />
+            <column datatype='integer' name='TotalSteps' ordinal='2' />
+            <column datatype='real' name='TotalDistance' ordinal='3' />
+            <column datatype='real' name='TrackerDistance' ordinal='4' />
+            <column datatype='real' name='LoggedActivitiesDistance' ordinal='5' />
+            <column datatype='real' name='VeryActiveDistance' ordinal='6' />
+            <column datatype='real' name='ModeratelyActiveDistance' ordinal='7' />
+            <column datatype='real' name='LightActiveDistance' ordinal='8' />
+            <column datatype='real' name='SedentaryActiveDistance' ordinal='9' />
+            <column datatype='integer' name='VeryActiveMinutes' ordinal='10' />
+            <column datatype='integer' name='FairlyActiveMinutes' ordinal='11' />
+            <column datatype='integer' name='LightlyActiveMinutes' ordinal='12' />
+            <column datatype='integer' name='SedentaryMinutes' ordinal='13' />
+            <column datatype='integer' name='Calories' ordinal='14' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[dailyActivity_merged (1).csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Id]</local-name>
+            <parent-name>[dailyActivity_merged (1).csv]</parent-name>
+            <remote-alias>Id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dailyActivity_merged (1).csv_DA3A9C5A3EAA45B59B1C0599D3DE12A6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ActivityDate</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[ActivityDate]</local-name>
+            <parent-name>[dailyActivity_merged (1).csv]</parent-name>
+            <remote-alias>ActivityDate</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dailyActivity_merged (1).csv_DA3A9C5A3EAA45B59B1C0599D3DE12A6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalSteps</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TotalSteps]</local-name>
+            <parent-name>[dailyActivity_merged (1).csv]</parent-name>
+            <remote-alias>TotalSteps</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dailyActivity_merged (1).csv_DA3A9C5A3EAA45B59B1C0599D3DE12A6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalDistance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TotalDistance]</local-name>
+            <parent-name>[dailyActivity_merged (1).csv]</parent-name>
+            <remote-alias>TotalDistance</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dailyActivity_merged (1).csv_DA3A9C5A3EAA45B59B1C0599D3DE12A6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TrackerDistance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TrackerDistance]</local-name>
+            <parent-name>[dailyActivity_merged (1).csv]</parent-name>
+            <remote-alias>TrackerDistance</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dailyActivity_merged (1).csv_DA3A9C5A3EAA45B59B1C0599D3DE12A6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LoggedActivitiesDistance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LoggedActivitiesDistance]</local-name>
+            <parent-name>[dailyActivity_merged (1).csv]</parent-name>
+            <remote-alias>LoggedActivitiesDistance</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dailyActivity_merged (1).csv_DA3A9C5A3EAA45B59B1C0599D3DE12A6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VeryActiveDistance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[VeryActiveDistance]</local-name>
+            <parent-name>[dailyActivity_merged (1).csv]</parent-name>
+            <remote-alias>VeryActiveDistance</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dailyActivity_merged (1).csv_DA3A9C5A3EAA45B59B1C0599D3DE12A6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ModeratelyActiveDistance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ModeratelyActiveDistance]</local-name>
+            <parent-name>[dailyActivity_merged (1).csv]</parent-name>
+            <remote-alias>ModeratelyActiveDistance</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dailyActivity_merged (1).csv_DA3A9C5A3EAA45B59B1C0599D3DE12A6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LightActiveDistance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LightActiveDistance]</local-name>
+            <parent-name>[dailyActivity_merged (1).csv]</parent-name>
+            <remote-alias>LightActiveDistance</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dailyActivity_merged (1).csv_DA3A9C5A3EAA45B59B1C0599D3DE12A6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SedentaryActiveDistance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SedentaryActiveDistance]</local-name>
+            <parent-name>[dailyActivity_merged (1).csv]</parent-name>
+            <remote-alias>SedentaryActiveDistance</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dailyActivity_merged (1).csv_DA3A9C5A3EAA45B59B1C0599D3DE12A6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VeryActiveMinutes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[VeryActiveMinutes]</local-name>
+            <parent-name>[dailyActivity_merged (1).csv]</parent-name>
+            <remote-alias>VeryActiveMinutes</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dailyActivity_merged (1).csv_DA3A9C5A3EAA45B59B1C0599D3DE12A6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FairlyActiveMinutes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FairlyActiveMinutes]</local-name>
+            <parent-name>[dailyActivity_merged (1).csv]</parent-name>
+            <remote-alias>FairlyActiveMinutes</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dailyActivity_merged (1).csv_DA3A9C5A3EAA45B59B1C0599D3DE12A6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LightlyActiveMinutes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[LightlyActiveMinutes]</local-name>
+            <parent-name>[dailyActivity_merged (1).csv]</parent-name>
+            <remote-alias>LightlyActiveMinutes</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dailyActivity_merged (1).csv_DA3A9C5A3EAA45B59B1C0599D3DE12A6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SedentaryMinutes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SedentaryMinutes]</local-name>
+            <parent-name>[dailyActivity_merged (1).csv]</parent-name>
+            <remote-alias>SedentaryMinutes</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dailyActivity_merged (1).csv_DA3A9C5A3EAA45B59B1C0599D3DE12A6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Calories</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Calories]</local-name>
+            <parent-name>[dailyActivity_merged (1).csv]</parent-name>
+            <remote-alias>Calories</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dailyActivity_merged (1).csv_DA3A9C5A3EAA45B59B1C0599D3DE12A6]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.068fvat1aca66r10bktc50efak7r].[avg:FairlyActiveMinutes:qk]&quot;' value='Fairly Active' />
+          <alias key='&quot;[federated.068fvat1aca66r10bktc50efak7r].[avg:LightlyActiveMinutes:qk]&quot;' value='Lightly Active' />
+          <alias key='&quot;[federated.068fvat1aca66r10bktc50efak7r].[avg:SedentaryMinutes:qk]&quot;' value='Sedentary ' />
+          <alias key='&quot;[federated.068fvat1aca66r10bktc50efak7r].[avg:VeryActiveMinutes:qk]&quot;' value='Very Active' />
+        </aliases>
+      </column>
+      <column caption='Activity Date' datatype='date' name='[ActivityDate]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[Calories]' role='measure' type='quantitative' />
+      <column caption='Fairly Active Minutes' datatype='integer' name='[FairlyActiveMinutes]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Id]' role='dimension' type='ordinal' />
+      <column caption='Light Active Distance' datatype='real' name='[LightActiveDistance]' role='measure' type='quantitative' />
+      <column caption='Lightly Active Minutes' datatype='integer' name='[LightlyActiveMinutes]' role='measure' type='quantitative' />
+      <column caption='Logged Activities Distance' datatype='real' name='[LoggedActivitiesDistance]' role='measure' type='quantitative' />
+      <column caption='Moderately Active Distance' datatype='real' name='[ModeratelyActiveDistance]' role='measure' type='quantitative' />
+      <column caption='Sedentary Active Distance' datatype='real' name='[SedentaryActiveDistance]' role='measure' type='quantitative' />
+      <column caption='Sedentary Minutes' datatype='integer' name='[SedentaryMinutes]' role='measure' type='quantitative' />
+      <column caption='Total Distance' datatype='real' name='[TotalDistance]' role='measure' type='quantitative' />
+      <column caption='Total Steps' datatype='integer' name='[TotalSteps]' role='measure' type='quantitative' />
+      <column caption='Tracker Distance' datatype='real' name='[TrackerDistance]' role='measure' type='quantitative' />
+      <column caption='Very Active Distance' datatype='real' name='[VeryActiveDistance]' role='measure' type='quantitative' />
+      <column caption='Very Active Minutes' datatype='integer' name='[VeryActiveMinutes]' role='measure' type='quantitative' />
+      <column caption='dailyActivity_merged (1).csv' datatype='table' name='[__tableau_internal_object_id__].[dailyActivity_merged (1).csv_DA3A9C5A3EAA45B59B1C0599D3DE12A6]' role='measure' type='quantitative' />
+      <column-instance column='[Calories]' derivation='Avg' name='[avg:Calories:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[FairlyActiveMinutes]' derivation='Avg' name='[avg:FairlyActiveMinutes:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[LightlyActiveMinutes]' derivation='Avg' name='[avg:LightlyActiveMinutes:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[SedentaryMinutes]' derivation='Avg' name='[avg:SedentaryMinutes:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[TotalSteps]' derivation='Avg' name='[avg:TotalSteps:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[VeryActiveMinutes]' derivation='Avg' name='[avg:VeryActiveMinutes:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calories]' derivation='Count' name='[cnt:Calories:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[TotalSteps]' derivation='Count' name='[cnt:TotalSteps:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calories]' derivation='CountD' name='[ctd:Calories:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[TotalSteps]' derivation='CountD' name='[ctd:TotalSteps:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[TotalSteps]' derivation='None' name='[none:TotalSteps:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calories]' derivation='Sum' name='[sum:Calories:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[FairlyActiveMinutes]' derivation='Sum' name='[sum:FairlyActiveMinutes:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[LightlyActiveMinutes]' derivation='Sum' name='[sum:LightlyActiveMinutes:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[SedentaryMinutes]' derivation='Sum' name='[sum:SedentaryMinutes:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[TotalSteps]' derivation='Sum' name='[sum:TotalSteps:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[VeryActiveMinutes]' derivation='Sum' name='[sum:VeryActiveMinutes:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/muham/Documents/Final Capstone Project/Final-Capstone-Project/#TableauTemp_07gic3u1yx56yh1ccbkjr1sergd3.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='05/17/2025 05:27:32 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>dailyActivity_merged (1).csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>33</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dailyActivity_merged (1).csv_DA3A9C5A3EAA45B59B1C0599D3DE12A6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ActivityDate</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[ActivityDate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ActivityDate</remote-alias>
+              <ordinal>1</ordinal>
+              <family>dailyActivity_merged (1).csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dailyActivity_merged (1).csv_DA3A9C5A3EAA45B59B1C0599D3DE12A6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TotalSteps</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[TotalSteps]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TotalSteps</remote-alias>
+              <ordinal>2</ordinal>
+              <family>dailyActivity_merged (1).csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>842</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dailyActivity_merged (1).csv_DA3A9C5A3EAA45B59B1C0599D3DE12A6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TotalDistance</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[TotalDistance]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TotalDistance</remote-alias>
+              <ordinal>3</ordinal>
+              <family>dailyActivity_merged (1).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>615</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dailyActivity_merged (1).csv_DA3A9C5A3EAA45B59B1C0599D3DE12A6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TrackerDistance</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[TrackerDistance]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TrackerDistance</remote-alias>
+              <ordinal>4</ordinal>
+              <family>dailyActivity_merged (1).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>613</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dailyActivity_merged (1).csv_DA3A9C5A3EAA45B59B1C0599D3DE12A6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LoggedActivitiesDistance</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[LoggedActivitiesDistance]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>LoggedActivitiesDistance</remote-alias>
+              <ordinal>5</ordinal>
+              <family>dailyActivity_merged (1).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dailyActivity_merged (1).csv_DA3A9C5A3EAA45B59B1C0599D3DE12A6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>VeryActiveDistance</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[VeryActiveDistance]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>VeryActiveDistance</remote-alias>
+              <ordinal>6</ordinal>
+              <family>dailyActivity_merged (1).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>333</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dailyActivity_merged (1).csv_DA3A9C5A3EAA45B59B1C0599D3DE12A6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ModeratelyActiveDistance</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[ModeratelyActiveDistance]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ModeratelyActiveDistance</remote-alias>
+              <ordinal>7</ordinal>
+              <family>dailyActivity_merged (1).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>211</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dailyActivity_merged (1).csv_DA3A9C5A3EAA45B59B1C0599D3DE12A6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LightActiveDistance</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[LightActiveDistance]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>LightActiveDistance</remote-alias>
+              <ordinal>8</ordinal>
+              <family>dailyActivity_merged (1).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>491</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dailyActivity_merged (1).csv_DA3A9C5A3EAA45B59B1C0599D3DE12A6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SedentaryActiveDistance</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[SedentaryActiveDistance]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SedentaryActiveDistance</remote-alias>
+              <ordinal>9</ordinal>
+              <family>dailyActivity_merged (1).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dailyActivity_merged (1).csv_DA3A9C5A3EAA45B59B1C0599D3DE12A6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>VeryActiveMinutes</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[VeryActiveMinutes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>VeryActiveMinutes</remote-alias>
+              <ordinal>10</ordinal>
+              <family>dailyActivity_merged (1).csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>122</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dailyActivity_merged (1).csv_DA3A9C5A3EAA45B59B1C0599D3DE12A6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FairlyActiveMinutes</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[FairlyActiveMinutes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FairlyActiveMinutes</remote-alias>
+              <ordinal>11</ordinal>
+              <family>dailyActivity_merged (1).csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>81</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dailyActivity_merged (1).csv_DA3A9C5A3EAA45B59B1C0599D3DE12A6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LightlyActiveMinutes</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[LightlyActiveMinutes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>LightlyActiveMinutes</remote-alias>
+              <ordinal>12</ordinal>
+              <family>dailyActivity_merged (1).csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>335</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dailyActivity_merged (1).csv_DA3A9C5A3EAA45B59B1C0599D3DE12A6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SedentaryMinutes</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[SedentaryMinutes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SedentaryMinutes</remote-alias>
+              <ordinal>13</ordinal>
+              <family>dailyActivity_merged (1).csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>549</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dailyActivity_merged (1).csv_DA3A9C5A3EAA45B59B1C0599D3DE12A6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Calories</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Calories]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Calories</remote-alias>
+              <ordinal>14</ordinal>
+              <family>dailyActivity_merged (1).csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>734</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dailyActivity_merged (1).csv_DA3A9C5A3EAA45B59B1C0599D3DE12A6]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.068fvat1aca66r10bktc50efak7r].[avg:FairlyActiveMinutes:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.068fvat1aca66r10bktc50efak7r].[avg:TotalSteps:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.068fvat1aca66r10bktc50efak7r].[cnt:TotalSteps:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.068fvat1aca66r10bktc50efak7r].[ctd:TotalSteps:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.068fvat1aca66r10bktc50efak7r].[none:Calculation_450078499601883139:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.068fvat1aca66r10bktc50efak7r].[none:TotalSteps:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.068fvat1aca66r10bktc50efak7r].[sum:FairlyActiveMinutes:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.068fvat1aca66r10bktc50efak7r].[sum:TotalSteps:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.068fvat1aca66r10bktc50efak7r].[avg:VeryActiveMinutes:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.068fvat1aca66r10bktc50efak7r].[sum:VeryActiveMinutes:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.068fvat1aca66r10bktc50efak7r].[avg:SedentaryMinutes:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.068fvat1aca66r10bktc50efak7r].[sum:SedentaryMinutes:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.068fvat1aca66r10bktc50efak7r].[avg:Calories:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.068fvat1aca66r10bktc50efak7r].[avg:LightlyActiveMinutes:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.068fvat1aca66r10bktc50efak7r].[cnt:Calories:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.068fvat1aca66r10bktc50efak7r].[ctd:Calories:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.068fvat1aca66r10bktc50efak7r].[sum:Calories:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.068fvat1aca66r10bktc50efak7r].[sum:LightlyActiveMinutes:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.08e2lg90bcq8p215tf04t07s6op7].[avg:TotalMinutesAsleep:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.08e2lg90bcq8p215tf04t07s6op7].[sum:TotalMinutesAsleep:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <datasource-dependencies datasource='federated.08e2lg90bcq8p215tf04t07s6op7'>
+        <column caption='Total Minutes Asleep' datatype='integer' name='[TotalMinutesAsleep]' role='measure' type='quantitative' />
+        <column-instance column='[TotalMinutesAsleep]' derivation='Sum' name='[sum:TotalMinutesAsleep:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <object-graph>
+        <objects>
+          <object caption='dailyActivity_merged (1).csv' id='dailyActivity_merged (1).csv_DA3A9C5A3EAA45B59B1C0599D3DE12A6'>
+            <properties context=''>
+              <relation connection='textscan.1et5ot201sl3261feo90z0nxkp50' name='dailyActivity_merged (1).csv' table='[dailyActivity_merged (1)#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                  <column datatype='integer' name='Id' ordinal='0' />
+                  <column datatype='date' name='ActivityDate' ordinal='1' />
+                  <column datatype='integer' name='TotalSteps' ordinal='2' />
+                  <column datatype='real' name='TotalDistance' ordinal='3' />
+                  <column datatype='real' name='TrackerDistance' ordinal='4' />
+                  <column datatype='real' name='LoggedActivitiesDistance' ordinal='5' />
+                  <column datatype='real' name='VeryActiveDistance' ordinal='6' />
+                  <column datatype='real' name='ModeratelyActiveDistance' ordinal='7' />
+                  <column datatype='real' name='LightActiveDistance' ordinal='8' />
+                  <column datatype='real' name='SedentaryActiveDistance' ordinal='9' />
+                  <column datatype='integer' name='VeryActiveMinutes' ordinal='10' />
+                  <column datatype='integer' name='FairlyActiveMinutes' ordinal='11' />
+                  <column datatype='integer' name='LightlyActiveMinutes' ordinal='12' />
+                  <column datatype='integer' name='SedentaryMinutes' ordinal='13' />
+                  <column datatype='integer' name='Calories' ordinal='14' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='sleepDay_merged' inline='true' name='federated.08e2lg90bcq8p215tf04t07s6op7' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='sleepDay_merged' name='textscan.00aom130anafvo1fgkrm61i67phd'>
+            <connection class='textscan' directory='C:/Users/muham/Downloads' filename='sleepDay_merged.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.00aom130anafvo1fgkrm61i67phd' name='sleepDay_merged.csv' table='[sleepDay_merged#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='integer' name='Id' ordinal='0' />
+            <column datatype='string' name='SleepDay' ordinal='1' />
+            <column datatype='integer' name='TotalSleepRecords' ordinal='2' />
+            <column datatype='integer' name='TotalMinutesAsleep' ordinal='3' />
+            <column datatype='integer' name='TotalTimeInBed' ordinal='4' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[sleepDay_merged.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Id]</local-name>
+            <parent-name>[sleepDay_merged.csv]</parent-name>
+            <remote-alias>Id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[sleepDay_merged.csv_B110377AB3FC47D7965D50A3CE00DA84]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SleepDay</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SleepDay]</local-name>
+            <parent-name>[sleepDay_merged.csv]</parent-name>
+            <remote-alias>SleepDay</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[sleepDay_merged.csv_B110377AB3FC47D7965D50A3CE00DA84]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalSleepRecords</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TotalSleepRecords]</local-name>
+            <parent-name>[sleepDay_merged.csv]</parent-name>
+            <remote-alias>TotalSleepRecords</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[sleepDay_merged.csv_B110377AB3FC47D7965D50A3CE00DA84]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalMinutesAsleep</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TotalMinutesAsleep]</local-name>
+            <parent-name>[sleepDay_merged.csv]</parent-name>
+            <remote-alias>TotalMinutesAsleep</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[sleepDay_merged.csv_B110377AB3FC47D7965D50A3CE00DA84]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalTimeInBed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TotalTimeInBed]</local-name>
+            <parent-name>[sleepDay_merged.csv]</parent-name>
+            <remote-alias>TotalTimeInBed</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[sleepDay_merged.csv_B110377AB3FC47D7965D50A3CE00DA84]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Id]' role='dimension' type='ordinal' />
+      <column caption='Sleep Day' datatype='string' name='[SleepDay]' role='dimension' type='nominal' />
+      <column caption='Total Minutes Asleep' datatype='integer' name='[TotalMinutesAsleep]' role='measure' type='quantitative' />
+      <column caption='Total Sleep Records' datatype='integer' name='[TotalSleepRecords]' role='measure' type='quantitative' />
+      <column caption='Total Time In Bed' datatype='integer' name='[TotalTimeInBed]' role='measure' type='quantitative' />
+      <column caption='sleepDay_merged.csv' datatype='table' name='[__tableau_internal_object_id__].[sleepDay_merged.csv_B110377AB3FC47D7965D50A3CE00DA84]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/muham/Documents/Final Capstone Project/Final-Capstone-Project/#TableauTemp_1bia5031uhsjza17ug92d1p06c73.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='05/17/2025 05:25:24 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>sleepDay_merged.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[sleepDay_merged.csv_B110377AB3FC47D7965D50A3CE00DA84]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SleepDay</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[SleepDay]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SleepDay</remote-alias>
+              <ordinal>1</ordinal>
+              <family>sleepDay_merged.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[sleepDay_merged.csv_B110377AB3FC47D7965D50A3CE00DA84]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TotalSleepRecords</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[TotalSleepRecords]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TotalSleepRecords</remote-alias>
+              <ordinal>2</ordinal>
+              <family>sleepDay_merged.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[sleepDay_merged.csv_B110377AB3FC47D7965D50A3CE00DA84]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TotalMinutesAsleep</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[TotalMinutesAsleep]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TotalMinutesAsleep</remote-alias>
+              <ordinal>3</ordinal>
+              <family>sleepDay_merged.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>256</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[sleepDay_merged.csv_B110377AB3FC47D7965D50A3CE00DA84]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TotalTimeInBed</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[TotalTimeInBed]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TotalTimeInBed</remote-alias>
+              <ordinal>4</ordinal>
+              <family>sleepDay_merged.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>242</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[sleepDay_merged.csv_B110377AB3FC47D7965D50A3CE00DA84]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='sleepDay_merged.csv' id='sleepDay_merged.csv_B110377AB3FC47D7965D50A3CE00DA84'>
+            <properties context=''>
+              <relation connection='textscan.00aom130anafvo1fgkrm61i67phd' name='sleepDay_merged.csv' table='[sleepDay_merged#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                  <column datatype='integer' name='Id' ordinal='0' />
+                  <column datatype='string' name='SleepDay' ordinal='1' />
+                  <column datatype='integer' name='TotalSleepRecords' ordinal='2' />
+                  <column datatype='integer' name='TotalMinutesAsleep' ordinal='3' />
+                  <column datatype='integer' name='TotalTimeInBed' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.068fvat1aca66r10bktc50efak7r'>
+      <datasources>
+        <datasource caption='dailyActivity_merged (1)' name='federated.068fvat1aca66r10bktc50efak7r' />
+      </datasources>
+      <datasource-dependencies datasource='federated.068fvat1aca66r10bktc50efak7r'>
+        <column caption='Activity Date' datatype='date' name='[ActivityDate]' role='dimension' type='ordinal' />
+        <column datatype='integer' name='[Id]' role='dimension' type='ordinal' />
+        <column-instance column='[Id]' derivation='None' name='[none:Id:ok]' pivot='key' type='ordinal' />
+        <column-instance column='[ActivityDate]' derivation='Day-Trunc' name='[tdy:ActivityDate:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.068fvat1aca66r10bktc50efak7r].[none:Id:ok]'>
+        <groupfilter function='level-members' level='[none:Id:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='quantitative' column='[federated.068fvat1aca66r10bktc50efak7r].[tdy:ActivityDate:qk]' included-values='in-range-or-null'>
+        <min>#2016-04-12 00:00:00#</min>
+        <max>#2016-05-12 00:00:00#</max>
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Fitbit Fitness Tracker Dashboard</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dailyActivity_merged (1)' name='federated.068fvat1aca66r10bktc50efak7r' />
+            <datasource caption='sleepDay_merged' name='federated.08e2lg90bcq8p215tf04t07s6op7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.068fvat1aca66r10bktc50efak7r'>
+            <column caption='Activity Date' datatype='date' name='[ActivityDate]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Id]' role='dimension' type='ordinal' />
+            <column caption='Total Steps' datatype='integer' name='[TotalSteps]' role='measure' type='quantitative' />
+            <column-instance column='[Id]' derivation='None' name='[none:Id:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[TotalSteps]' derivation='Sum' name='[sum:TotalSteps:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ActivityDate]' derivation='Day-Trunc' name='[tdy:ActivityDate:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.08e2lg90bcq8p215tf04t07s6op7'>
+            <column datatype='integer' name='[Id]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.068fvat1aca66r10bktc50efak7r].[none:Id:ok]</column>
+            <column>[federated.068fvat1aca66r10bktc50efak7r].[tdy:ActivityDate:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis-title'>
+            <format attr='color' field='[federated.068fvat1aca66r10bktc50efak7r].[sum:TotalSteps:qk]' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.068fvat1aca66r10bktc50efak7r].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.068fvat1aca66r10bktc50efak7r].[sum:TotalSteps:qk]</rows>
+        <cols>[federated.068fvat1aca66r10bktc50efak7r].[tdy:ActivityDate:qk]</cols>
+        <join-lod-include-overrides>
+          <column>[federated.08e2lg90bcq8p215tf04t07s6op7].[Id]</column>
+        </join-lod-include-overrides>
+      </table>
+      <simple-id uuid='{815C8F1D-7152-4DA6-AB31-D7B6868CAD9B}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dailyActivity_merged (1)' name='federated.068fvat1aca66r10bktc50efak7r' />
+            <datasource caption='sleepDay_merged' name='federated.08e2lg90bcq8p215tf04t07s6op7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.068fvat1aca66r10bktc50efak7r'>
+            <column caption='Activity Date' datatype='date' name='[ActivityDate]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Id]' role='dimension' type='ordinal' />
+            <column-instance column='[Id]' derivation='None' name='[none:Id:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[ActivityDate]' derivation='Day-Trunc' name='[tdy:ActivityDate:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.08e2lg90bcq8p215tf04t07s6op7'>
+            <column datatype='integer' name='[Id]' role='dimension' type='ordinal' />
+            <column caption='Total Minutes Asleep' datatype='integer' name='[TotalMinutesAsleep]' role='measure' type='quantitative' />
+            <column-instance column='[TotalMinutesAsleep]' derivation='Sum' name='[sum:TotalMinutesAsleep:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.068fvat1aca66r10bktc50efak7r].[none:Id:ok]</column>
+            <column>[federated.068fvat1aca66r10bktc50efak7r].[tdy:ActivityDate:qk]</column>
+          </slices>
+          <aggregation value='false' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f28e2b' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.08e2lg90bcq8p215tf04t07s6op7].[sum:TotalMinutesAsleep:qk]</rows>
+        <cols>[federated.068fvat1aca66r10bktc50efak7r].[tdy:ActivityDate:qk]</cols>
+        <join-lod-include-overrides>
+          <column>[federated.08e2lg90bcq8p215tf04t07s6op7].[Id]</column>
+        </join-lod-include-overrides>
+      </table>
+      <simple-id uuid='{E8764A10-1F67-45FE-BDD9-50DF2A8AA038}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Calories burned vs total steps</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sleepDay_merged' name='federated.08e2lg90bcq8p215tf04t07s6op7' />
+            <datasource caption='dailyActivity_merged (1)' name='federated.068fvat1aca66r10bktc50efak7r' />
+          </datasources>
+          <datasource-dependencies datasource='federated.068fvat1aca66r10bktc50efak7r'>
+            <column datatype='integer' name='[Calories]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Id]' role='dimension' type='ordinal' />
+            <column caption='Total Steps' datatype='integer' name='[TotalSteps]' role='measure' type='quantitative' />
+            <column-instance column='[Calories]' derivation='Avg' name='[avg:Calories:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[TotalSteps]' derivation='Avg' name='[avg:TotalSteps:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Id]' derivation='None' name='[none:Id:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='false' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.068fvat1aca66r10bktc50efak7r].[none:Id:ok]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+          </pane>
+        </panes>
+        <rows>[federated.068fvat1aca66r10bktc50efak7r].[avg:Calories:qk]</rows>
+        <cols>[federated.068fvat1aca66r10bktc50efak7r].[avg:TotalSteps:qk]</cols>
+        <join-lod-include-overrides>
+          <column>[federated.068fvat1aca66r10bktc50efak7r].[Id]</column>
+        </join-lod-include-overrides>
+      </table>
+      <simple-id uuid='{6B565CBF-B403-4195-924B-A9B29160E599}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Average activity minutes per weekday</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dailyActivity_merged (1)' name='federated.068fvat1aca66r10bktc50efak7r' />
+          </datasources>
+          <datasource-dependencies datasource='federated.068fvat1aca66r10bktc50efak7r'>
+            <column caption='Activity Date' datatype='date' name='[ActivityDate]' role='dimension' type='ordinal' />
+            <column caption='Fairly Active Minutes' datatype='integer' name='[FairlyActiveMinutes]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Id]' role='dimension' type='ordinal' />
+            <column caption='Lightly Active Minutes' datatype='integer' name='[LightlyActiveMinutes]' role='measure' type='quantitative' />
+            <column caption='Sedentary Minutes' datatype='integer' name='[SedentaryMinutes]' role='measure' type='quantitative' />
+            <column caption='Very Active Minutes' datatype='integer' name='[VeryActiveMinutes]' role='measure' type='quantitative' />
+            <column-instance column='[FairlyActiveMinutes]' derivation='Avg' name='[avg:FairlyActiveMinutes:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[LightlyActiveMinutes]' derivation='Avg' name='[avg:LightlyActiveMinutes:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[SedentaryMinutes]' derivation='Avg' name='[avg:SedentaryMinutes:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[VeryActiveMinutes]' derivation='Avg' name='[avg:VeryActiveMinutes:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Id]' derivation='None' name='[none:Id:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[ActivityDate]' derivation='Day-Trunc' name='[tdy:ActivityDate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ActivityDate]' derivation='Weekday' name='[wd:ActivityDate:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.068fvat1aca66r10bktc50efak7r].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.068fvat1aca66r10bktc50efak7r].[avg:FairlyActiveMinutes:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.068fvat1aca66r10bktc50efak7r].[avg:LightlyActiveMinutes:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.068fvat1aca66r10bktc50efak7r].[avg:SedentaryMinutes:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.068fvat1aca66r10bktc50efak7r].[avg:VeryActiveMinutes:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.068fvat1aca66r10bktc50efak7r].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.068fvat1aca66r10bktc50efak7r].[avg:LightlyActiveMinutes:qk]&quot;</bucket>
+              <bucket>&quot;[federated.068fvat1aca66r10bktc50efak7r].[avg:FairlyActiveMinutes:qk]&quot;</bucket>
+              <bucket>&quot;[federated.068fvat1aca66r10bktc50efak7r].[avg:SedentaryMinutes:qk]&quot;</bucket>
+              <bucket>&quot;[federated.068fvat1aca66r10bktc50efak7r].[avg:VeryActiveMinutes:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.068fvat1aca66r10bktc50efak7r].[:Measure Names]</column>
+            <column>[federated.068fvat1aca66r10bktc50efak7r].[none:Id:ok]</column>
+            <column>[federated.068fvat1aca66r10bktc50efak7r].[tdy:ActivityDate:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.068fvat1aca66r10bktc50efak7r].[Multiple Values]' scope='rows' value='Minutes Active' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.068fvat1aca66r10bktc50efak7r].[:Measure Names]' />
+            </encodings>
+            <reference-line axis-column='[federated.068fvat1aca66r10bktc50efak7r].[Multiple Values]' enable-instant-analytics='true' formula='total' id='refline0' label='21.4' label-type='custom' scope='per-table' value-column='[federated.068fvat1aca66r10bktc50efak7r].[Multiple Values]' z-order='1' />
+          </pane>
+        </panes>
+        <rows>[federated.068fvat1aca66r10bktc50efak7r].[Multiple Values]</rows>
+        <cols>([federated.068fvat1aca66r10bktc50efak7r].[wd:ActivityDate:ok] / [federated.068fvat1aca66r10bktc50efak7r].[:Measure Names])</cols>
+      </table>
+      <simple-id uuid='{A7F41798-7F00-454E-8022-D8FB4D239923}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average activity minutes </run>
+          </formatted-text>
+        </title>
+        <caption>
+          <formatted-text />
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dailyActivity_merged (1)' name='federated.068fvat1aca66r10bktc50efak7r' />
+          </datasources>
+          <datasource-dependencies datasource='federated.068fvat1aca66r10bktc50efak7r'>
+            <column caption='Activity Date' datatype='date' name='[ActivityDate]' role='dimension' type='ordinal' />
+            <column caption='Fairly Active Minutes' datatype='integer' name='[FairlyActiveMinutes]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Id]' role='dimension' type='ordinal' />
+            <column caption='Lightly Active Minutes' datatype='integer' name='[LightlyActiveMinutes]' role='measure' type='quantitative' />
+            <column caption='Sedentary Minutes' datatype='integer' name='[SedentaryMinutes]' role='measure' type='quantitative' />
+            <column caption='Very Active Minutes' datatype='integer' name='[VeryActiveMinutes]' role='measure' type='quantitative' />
+            <column-instance column='[FairlyActiveMinutes]' derivation='Avg' name='[avg:FairlyActiveMinutes:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[LightlyActiveMinutes]' derivation='Avg' name='[avg:LightlyActiveMinutes:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[SedentaryMinutes]' derivation='Avg' name='[avg:SedentaryMinutes:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[VeryActiveMinutes]' derivation='Avg' name='[avg:VeryActiveMinutes:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Id]' derivation='None' name='[none:Id:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[ActivityDate]' derivation='Day-Trunc' name='[tdy:ActivityDate:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.068fvat1aca66r10bktc50efak7r].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.068fvat1aca66r10bktc50efak7r].[avg:FairlyActiveMinutes:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.068fvat1aca66r10bktc50efak7r].[avg:LightlyActiveMinutes:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.068fvat1aca66r10bktc50efak7r].[avg:SedentaryMinutes:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.068fvat1aca66r10bktc50efak7r].[avg:VeryActiveMinutes:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.068fvat1aca66r10bktc50efak7r].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.068fvat1aca66r10bktc50efak7r].[avg:FairlyActiveMinutes:qk]&quot;</bucket>
+              <bucket>&quot;[federated.068fvat1aca66r10bktc50efak7r].[avg:LightlyActiveMinutes:qk]&quot;</bucket>
+              <bucket>&quot;[federated.068fvat1aca66r10bktc50efak7r].[avg:SedentaryMinutes:qk]&quot;</bucket>
+              <bucket>&quot;[federated.068fvat1aca66r10bktc50efak7r].[avg:VeryActiveMinutes:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.068fvat1aca66r10bktc50efak7r].[none:Id:ok]</column>
+            <column>[federated.068fvat1aca66r10bktc50efak7r].[:Measure Names]</column>
+            <column>[federated.068fvat1aca66r10bktc50efak7r].[tdy:ActivityDate:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#4e79a7' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.068fvat1aca66r10bktc50efak7r].[:Measure Names]</rows>
+        <cols>[federated.068fvat1aca66r10bktc50efak7r].[Multiple Values]</cols>
+      </table>
+      <simple-id uuid='{DC822C8D-E113-455B-99B0-C7BB1D3D585E}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Final dashboard'>
+      <style />
+      <size maxheight='800' maxwidth='1700' minheight='560' minwidth='420' sizing-mode='range' />
+      <datasources>
+        <datasource caption='dailyActivity_merged (1)' name='federated.068fvat1aca66r10bktc50efak7r' />
+      </datasources>
+      <datasource-dependencies datasource='federated.068fvat1aca66r10bktc50efak7r'>
+        <column caption='Activity Date' datatype='date' name='[ActivityDate]' role='dimension' type='ordinal' />
+        <column datatype='integer' name='[Id]' role='dimension' type='ordinal' />
+        <column-instance column='[Id]' derivation='None' name='[none:Id:ok]' pivot='key' type='ordinal' />
+        <column-instance column='[ActivityDate]' derivation='Day-Trunc' name='[tdy:ActivityDate:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97978' id='38' param='horz' type-v2='layout-flow' w='99022' x='489' y='1011'>
+            <zone h='97978' id='18' param='horz' type-v2='layout-flow' w='88332' x='489' y='1011'>
+              <zone h='97978' id='16' type-v2='layout-basic' w='88332' x='489' y='1011'>
+                <zone h='62981' id='8' param='horz' type-v2='layout-flow' w='88332' x='489' y='36008'>
+                  <zone h='62981' id='6' type-v2='layout-basic' w='88332' x='489' y='36008' />
+                </zone>
+                <zone fixed-size='235' h='29699' id='7' is-fixed='true' param='vert' type-v2='layout-flow' w='44400' x='489' y='1011'>
+                  <zone h='29699' id='12' name='Sheet 1' w='44400' x='489' y='1011'>
+                    <layout-cache minheight='213' minwidth='258' type-h='scalable' type-w='scalable' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone forceUpdate='true' h='5298' id='25' type-v2='text' w='44400' x='489' y='30710'>
+                  <formatted-text>
+                    <run fontalignment='1' fontcolor='#000000' fontsize='15'>Total steps per day</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='29699' id='36' name='Sheet 2' w='43932' x='44889' y='1011'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='5298' id='40' type-v2='text' w='43932' x='44889' y='30710'>
+                  <formatted-text>
+                    <run fontalignment='1' fontcolor='#000000' fontsize='15'>Total minutes asleep per date</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+            <zone fixed-size='175' h='97978' id='37' is-fixed='true' param='vert' type-v2='layout-flow' w='10690' x='88821' y='1011' />
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='63211' id='15' name='Sheet 3' w='34759' x='65058' y='36410' />
+        <zone h='63590' id='10' name='Sheet 5' w='55956' x='8674' y='36030' />
+        <zone h='13401' id='11' leg-item-order='normal' name='Sheet 5' pane-specification-id='0' param='[federated.068fvat1aca66r10bktc50efak7r].[:Measure Names]' type-v2='color' w='8552' x='1161' y='42731' />
+        <zone h='7712' id='13' mode='dropdown' name='Sheet 1' param='[federated.068fvat1aca66r10bktc50efak7r].[none:Id:ok]' type-v2='filter' w='10263' x='89371' y='3919' />
+        <zone fixed-size='65' h='8976' id='14' is-fixed='true' name='Sheet 1' param='[federated.068fvat1aca66r10bktc50efak7r].[tdy:ActivityDate:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='10690' x='89065' y='12895' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1400' minheight='1400' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='55' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97978' id='54' param='vert' type-v2='layout-flow' w='99022' x='489' y='1011'>
+                <zone h='7712' id='13' mode='dropdown' name='Sheet 1' param='[federated.068fvat1aca66r10bktc50efak7r].[none:Id:ok]' type-v2='filter' w='10263' x='89371' y='3919'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='65' h='8976' id='14' name='Sheet 1' param='[federated.068fvat1aca66r10bktc50efak7r].[tdy:ActivityDate:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='10690' x='89065' y='12895'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='230' h='29699' id='12' is-fixed='true' name='Sheet 1' w='44400' x='489' y='1011'>
+                  <layout-cache minheight='213' minwidth='258' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='230' h='29699' id='36' is-fixed='true' name='Sheet 2' w='43932' x='44889' y='1011'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='5298' id='25' type-v2='text' w='44400' x='489' y='30710'>
+                  <formatted-text>
+                    <run fontalignment='1' fontcolor='#000000' fontsize='15'>Total steps per day</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='5298' id='40' type-v2='text' w='43932' x='44889' y='30710'>
+                  <formatted-text>
+                    <run fontalignment='1' fontcolor='#000000' fontsize='15'>Total minutes asleep per date</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='63590' id='10' is-fixed='true' name='Sheet 5' w='55956' x='8674' y='36030'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='13401' id='11' leg-item-order='normal' name='Sheet 5' pane-specification-id='0' param='[federated.068fvat1aca66r10bktc50efak7r].[:Measure Names]' type-v2='color' w='8552' x='1161' y='42731'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='63211' id='15' is-fixed='true' name='Sheet 3' w='34759' x='65058' y='36410'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{69239A9C-A86D-40ED-867B-29DB99CFD47D}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='63'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.068fvat1aca66r10bktc50efak7r].[none:Id:ok]' type='filter' />
+            <card param='[federated.068fvat1aca66r10bktc50efak7r].[tdy:ActivityDate:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='2' param='[federated.068fvat1aca66r10bktc50efak7r].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1E823255-26F8-48DD-A74C-5FEFFF0A79D6}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.068fvat1aca66r10bktc50efak7r].[none:Id:ok]' type='filter' />
+            <card param='[federated.068fvat1aca66r10bktc50efak7r].[tdy:ActivityDate:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{25EC59A7-EB0C-4B4F-8322-79AB086C9C78}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{65EDF6B3-31B2-437F-902E-6A8F120485DA}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.068fvat1aca66r10bktc50efak7r].[none:Id:ok]' type='filter' />
+            <card pane-specification-id='0' param='[federated.068fvat1aca66r10bktc50efak7r].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BBEDF0BC-F4F8-4C1C-A09E-4EC076044805}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Final dashboard'>
+      <viewpoints>
+        <viewpoint name='Sheet 1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 3'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 5'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{81B1EA78-DF71-4D44-ADCA-C1E32983AEAD}' />
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C2EB4E63-930B-4577-BF48-A0A523051617}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Final dashboard' width='192'>
+      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
+      v8n4fwECFKj0g/XbcAAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
